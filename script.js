@@ -18,4 +18,18 @@ function prevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   updateCarousel();
 }
+
+function updateIndicators() {
+  const indicators = document.getElementById("carousel-indicators");
+  indicators.innerHTML = "";
+  images.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.className = "indicator-dot" + (index === currentIndex ? " active" : "");
+    dot.onclick = () => {
+      currentIndex = index;
+      updateCarousel();
+    };
+    indicators.appendChild(dot);
+  });
+}
 window.onload = updateCarousel;
