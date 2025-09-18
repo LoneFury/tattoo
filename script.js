@@ -1,7 +1,7 @@
 const images = [
-  { src: "images/photo1.tif", desc: "Description for photo 1" },
-  { src: "images/photo2.tif", desc: "Description for photo 2" },
-  { src: "images/photo3.tif", desc: "Description for photo 3" }
+  { src: "tattoo/images/photo1.tif", desc: "Description for photo 1" },
+  { src: "tattoo/images/photo2.tif", desc: "Description for photo 2" },
+  { src: "tattoo/images/photo3.tif", desc: "Description for photo 3" }
 ];
 let currentIndex = 0;
 function updateCarousel() {
