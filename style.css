@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Courier, monospace;
+}
+header {
+  text-align: center;
+  background-color: #DCAE96;
+  padding: 10px;
+}
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+}
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+.carousel img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
+}
+.carousel p {
+  text-align: center;
+  margin-top: 10px;
+}
+.center-text {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+.contact textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  display: block;
+  margin: 20px auto;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .profile-photo {
+    width: 150px;
+  }
+}
